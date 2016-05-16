@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YED-sf-VNw">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="523"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="messageCell" id="1S4-VD-jvL" customClass="MessageCell">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1S4-VD-jvL" id="RYV-g1-uRT">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <animations/>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="lRL-cK-6oI"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="c9P-yK-WYr"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MNm-V9-uWt">
+                                <rect key="frame" x="0.0" y="523" width="320" height="45"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ToolViewEmotion" highlightedImage="ToolViewEmotionHL" translatesAutoresizingMaskIntoConstraints="NO" id="LJK-dr-1al">
+                                        <rect key="frame" x="5" y="5" width="35" height="35"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="RFj-dw-J1i"/>
+                                            <constraint firstAttribute="width" constant="35" id="ddo-HG-ZFh"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TypeSelectorBtn_Black" highlightedImage="TypeSelectorBtnHL_Black" translatesAutoresizingMaskIntoConstraints="NO" id="UOT-HB-Y9z">
+                                        <rect key="frame" x="240" y="5" width="35" height="35"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="0vY-Zn-nxE"/>
+                                            <constraint firstAttribute="width" constant="35" id="33k-w2-It1"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ToolViewInputVoice" highlightedImage="ToolViewInputVoiceHL" translatesAutoresizingMaskIntoConstraints="NO" id="fLT-qU-xZW">
+                                        <rect key="frame" x="280" y="5" width="35" height="35"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="35" id="GaI-2F-UXa"/>
+                                            <constraint firstAttribute="height" constant="35" id="YXG-YR-xof"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" background="SendTextViewBkg" translatesAutoresizingMaskIntoConstraints="NO" id="ixQ-iP-ofg" userLabel="sendMessageTextField">
+                                        <rect key="frame" x="45" y="3" width="190" height="40"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="xh8-uN-iba"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="sendText:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="5f2-6C-j2N"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="fLT-qU-xZW" firstAttribute="leading" secondItem="UOT-HB-Y9z" secondAttribute="trailing" constant="5" id="9o4-Aq-kEo"/>
+                                    <constraint firstItem="UOT-HB-Y9z" firstAttribute="leading" secondItem="ixQ-iP-ofg" secondAttribute="trailing" constant="5" id="B8k-uO-VoM"/>
+                                    <constraint firstAttribute="height" constant="45" id="Bwu-Hi-pgp"/>
+                                    <constraint firstItem="ixQ-iP-ofg" firstAttribute="leading" secondItem="LJK-dr-1al" secondAttribute="trailing" constant="5" id="L7N-b8-Wbk"/>
+                                    <constraint firstItem="LJK-dr-1al" firstAttribute="top" secondItem="MNm-V9-uWt" secondAttribute="top" constant="5" id="Rbj-1C-fXq"/>
+                                    <constraint firstItem="LJK-dr-1al" firstAttribute="centerY" secondItem="MNm-V9-uWt" secondAttribute="centerY" id="YcD-43-VrE"/>
+                                    <constraint firstItem="LJK-dr-1al" firstAttribute="leading" secondItem="MNm-V9-uWt" secondAttribute="leading" constant="5" id="Yeq-7h-vgc"/>
+                                    <constraint firstAttribute="bottom" secondItem="LJK-dr-1al" secondAttribute="bottom" constant="5" id="Yzr-0f-iLE"/>
+                                    <constraint firstItem="ixQ-iP-ofg" firstAttribute="centerY" secondItem="MNm-V9-uWt" secondAttribute="centerY" id="aKh-yJ-Ey1"/>
+                                    <constraint firstAttribute="bottom" secondItem="UOT-HB-Y9z" secondAttribute="bottom" constant="5" id="cow-zI-QLG"/>
+                                    <constraint firstAttribute="trailing" secondItem="fLT-qU-xZW" secondAttribute="trailing" constant="5" id="o3D-SM-JX8"/>
+                                    <constraint firstItem="fLT-qU-xZW" firstAttribute="top" secondItem="MNm-V9-uWt" secondAttribute="top" constant="5" id="ofH-Ei-T6n"/>
+                                    <constraint firstItem="UOT-HB-Y9z" firstAttribute="top" secondItem="MNm-V9-uWt" secondAttribute="top" constant="5" id="soj-7R-4F8"/>
+                                    <constraint firstAttribute="bottom" secondItem="fLT-qU-xZW" secondAttribute="bottom" constant="5" id="y3q-d4-8e1"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YED-sf-VNw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6kb-Nw-KLT"/>
+                            <constraint firstAttribute="trailing" secondItem="YED-sf-VNw" secondAttribute="trailing" id="9TO-mU-2fh"/>
+                            <constraint firstAttribute="bottom" secondItem="MNm-V9-uWt" secondAttribute="bottom" id="BPI-Mt-jr5"/>
+                            <constraint firstItem="MNm-V9-uWt" firstAttribute="top" secondItem="YED-sf-VNw" secondAttribute="bottom" id="L4x-2f-dOE"/>
+                            <constraint firstAttribute="trailing" secondItem="MNm-V9-uWt" secondAttribute="trailing" id="L7F-Qp-aKb"/>
+                            <constraint firstItem="MNm-V9-uWt" firstAttribute="top" secondItem="YED-sf-VNw" secondAttribute="bottom" id="QAa-gu-018"/>
+                            <constraint firstItem="MNm-V9-uWt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dSt-Ii-8nN"/>
+                            <constraint firstItem="YED-sf-VNw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="uxC-xc-ozv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomConstraint" destination="BPI-Mt-jr5" id="rsZ-bc-L5t"/>
+                        <outlet property="tableView" destination="YED-sf-VNw" id="yQ4-ab-F7X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2912" y="127"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="SendTextViewBkg" width="50" height="40"/>
+        <image name="ToolViewEmotion" width="35" height="35"/>
+        <image name="ToolViewEmotionHL" width="35" height="35"/>
+        <image name="ToolViewInputVoice" width="35" height="35"/>
+        <image name="ToolViewInputVoiceHL" width="35" height="35"/>
+        <image name="TypeSelectorBtnHL_Black" width="35" height="35"/>
+        <image name="TypeSelectorBtn_Black" width="35" height="35"/>
+    </resources>
+</document>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>content</key>
+		<string>你好</string>
+		<key>fromMe</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>content</key>
+		<string>你也好</string>
+		<key>fromMe</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>content</key>
+		<string>放假干哈了</string>
+		<key>fromMe</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>content</key>
+		<string>就是睡觉嘛，天天睡觉，啥也木有做，反倒是觉着浪费了好多时间。如果有时间我真的想去看场电影，或者去新西兰旅游</string>
+		<key>fromMe</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>content</key>
+		<string>恩，不错啊。我们是去了很多地方，主要是欧洲那些城市，那边全是中国人，简直是让人疯狂啊。但是那边的风景确实不错，艺术展览让人目不暇接，使我的心都碎了。如果你有时间也可以去看看哈</string>
+		<key>fromMe</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>content</key>
+		<string>哈哈，我们俩是宅人，都不喜欢去旅游</string>
+		<key>fromMe</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>content</key>
+		<string>那不行额，还是希望你们能去哈</string>
+		<key>fromMe</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>content</key>
+		<string>尽量吧，哈哈</string>
+		<key>fromMe</key>
+		<false/>
+	</dict>
+</array>
+</plist>
